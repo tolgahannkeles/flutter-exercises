@@ -12,6 +12,9 @@ dependencies:
     
   dio: ^5.3.2
 
+  # Animation
+  flutter_spinkit: ^5.2.0
+
 dev_dependencies:
   flutter_test:
     sdk: flutter

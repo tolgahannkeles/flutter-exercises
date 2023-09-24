@@ -25,8 +25,11 @@ import 'package:exercise/202/tab_bar.dart';
 import 'package:exercise/demos/colors_demo.dart';
 import 'package:exercise/demos/colors_lifecycle_demo.dart';
 import 'package:exercise/demos/list_view_demo.dart';
+import 'package:exercise/theme/widget_size.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+
+import '202/package.dart';
 
 void main() {
   runApp(const MainApp());
@@ -38,7 +41,15 @@ class MainApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      theme: ThemeData.dark().copyWith(
+      theme: ThemeData.light().copyWith(),
+      debugShowCheckedModeBanner: false,
+      home: const WidgetSizeExercise(),
+    );
+  }
+}
+
+/*
+ThemeData.dark().copyWith(
         tabBarTheme: const TabBarTheme(
           labelColor: Colors.amber,
           unselectedLabelColor: Colors.green,
@@ -71,8 +82,5 @@ class MainApp extends StatelessWidget {
           actionsIconTheme: IconThemeData(color: Colors.amber),
         ),
       ),
-      debugShowCheckedModeBanner: false,
-      home: const ServiceUiGet(),
-    );
-  }
-}
+
+*/
