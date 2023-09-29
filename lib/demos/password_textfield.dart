@@ -18,9 +18,11 @@ class _PasswordTextFieldState extends State<PasswordTextField> {
       autofillHints: const [AutofillHints.password],
       keyboardType: TextInputType.visiblePassword,
       obscureText: _isHidden,
-      obscuringCharacter: "?",
+      obscuringCharacter: "#",
       decoration: InputDecoration(
-        border: const UnderlineInputBorder(),
+        border: OutlineInputBorder(
+            borderRadius: BorderRadius.all(Radius.circular(20)),
+            borderSide: BorderSide(color: Colors.green, width: 5)),
         hintText: "Password",
         suffix: IconButton(
           onPressed: _changeVisibilty,
