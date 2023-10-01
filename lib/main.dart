@@ -1,5 +1,8 @@
 import 'package:exercise/101/image.dart';
 import 'package:exercise/202/animated_exercise.dart';
+import 'package:exercise/202/cache/secure_context/secure.dart';
+import 'package:exercise/202/cache/shared_preferences.dart';
+import 'package:exercise/202/cache/user_cache/shared_preferences_list.dart';
 import 'package:exercise/202/form_exercise.dart';
 import 'package:exercise/202/image_exercise_202.dart';
 import 'package:exercise/202/state_manage/state_management_exercise.dart';
@@ -18,7 +21,7 @@ class MainApp extends StatelessWidget {
     return MaterialApp(
       theme: ThemeData.light().copyWith(),
       debugShowCheckedModeBanner: false,
-      home: const FormExercise(),
+      home: const SecureExercise(),
     );
   }
 }
