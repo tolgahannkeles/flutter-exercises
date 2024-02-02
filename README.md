@@ -16,4 +16,4 @@ Explore the examples by navigating to each topic's respective directory:
 
 5. **Forms:** Implementing forms and user input handling in Flutter.
   
-6. **And more** Please explore the other features in that repository. 
+6. **And more:** Please visit the other parts of that repository. 
